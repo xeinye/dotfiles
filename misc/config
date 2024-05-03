@@ -1,0 +1,10 @@
+[user]
+    	name = xeinye
+	email = 82726847+xeinye@users.noreply.github.com
+	signingkey = C7509FB0D2DE4B09
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg1
+[init]
+	defaultBranch = master

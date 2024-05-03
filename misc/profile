@@ -1,0 +1,9 @@
+export PATH=$PATH:$HOME/git/bin/:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin
+export HOME TERM
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export MOZ_ACCELERATED=1
+export MOZ_WEBRENDER=1
+export DBUS_SESSION_BUS_ADDRESS=no
+export ENV=$HOME/rules/rc
+export HISTFILE=$HOME/rules/history
