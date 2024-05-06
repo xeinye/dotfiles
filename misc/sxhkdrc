@@ -1,0 +1,35 @@
+super + Return
+    st
+
+super + d
+    st -G 322x114+26+35 -e smenu
+
+super + q 
+	wctrl -q $(pfw)
+
+super + c
+    wctrl -c
+
+super + f
+    wctrl -f $(pfw)
+
+super + l
+    xlock
+
+super + p
+    scr
+
+super {, + shift} + p
+   	scr -s
+
+super {, + shift} + q
+   	pkill glazier
+
+alt + Tab 
+    wctrl -cy next
+
+alt {, + shift} + Tab
+   	wctrl -cy prev
+
+super + {1,2,3}
+    wmspc -g {1,2,3}
