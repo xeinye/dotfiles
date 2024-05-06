@@ -33,3 +33,6 @@ alt {, + shift} + Tab
 
 super + {1,2,3}
     wmspc -g {1,2,3}
+
+super {, + shift} + {1,2,3} 
+   	wmspc -m {1,2,3}
