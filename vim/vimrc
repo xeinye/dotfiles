@@ -19,7 +19,6 @@ set encoding=utf-8
 set foldenable
 set foldopen=hor,insert,mark,search,undo
 set textwidth=80 
-set listchars=tab:▸\ ,space:·,eol:¬
 set viminfofile=NONE
 set ruler
 set tabstop=4 

@@ -1,18 +1,17 @@
 . ~/.profile
 
 bud -s &
-xcompmgr -c &
-xset b off &
-xset r rate 200 40 &
-xset s off &
-ulimit -Sc 0 &
-
+picom -c &
+xset b off
+xset r rate 200 40
+xset s off
+ulimit -Sc 0
 sxhkd &
 mkdir -p /tmp/workspaces
 cat "/dev/null" > /tmp/workspaces/ws1
 cat "/dev/null" > /tmp/workspaces/ws2
 cat "/dev/null" > /tmp/workspaces/ws3
 echo "1" > /tmp/workspaces/curr
-
 setxkbmap -layout us -variant intl &
+xclock -d -foreground "#dddddd" -background "#1c1c1c" -geometry 160x37+19+48 & 
 exec glazier

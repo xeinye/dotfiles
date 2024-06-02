@@ -14,7 +14,7 @@ super + f
     wctrl -f $(pfw)
 
 super + l
-    xlock
+    xlock -foreground "#dddddd" -background "#1c1c1c"
 
 super + p
     scr

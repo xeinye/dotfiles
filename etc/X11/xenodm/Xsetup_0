@@ -1,0 +1,11 @@
+#!/bin/sh
+# $OpenBSD: Xsetup_0.in,v 1.1 2021/08/30 15:38:27 matthieu Exp $
+
+prefix="/usr/X11R6"
+exec_prefix="${prefix}"
+xsetroot -solid "#1c1c1c"
+
+xset b off
+xset s off
+
+# sxpm OpenBSD.xpm &
