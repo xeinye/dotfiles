@@ -7,10 +7,7 @@ endif
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'dense-analysis/ale'
 Plug 'LunarWatcher/auto-pairs'
-Plug 'cormacrelf/vim-colors-github'
-Plug 'vimwiki/vimwiki'
 Plug 'mzlogin/vim-markdown-toc'
 Plug '~/git/pnevma.vim'
 call plug#end()
