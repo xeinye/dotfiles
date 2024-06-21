@@ -5,5 +5,6 @@ export LANG=en_US.UTF-8
 export MOZ_ACCELERATED=1
 export MOZ_WEBRENDER=1
 export DBUS_SESSION_BUS_ADDRESS=no
+export HISTSIZE=10000
 export ENV=$HOME/rules/rc
 export HISTFILE=$HOME/rules/history
