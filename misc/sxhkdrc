@@ -2,7 +2,7 @@ super + Return
     st
 
 super + d
-    st -G 322x114+26+35 -e smenu
+    st -G 322x114+15+90 -e smenu
 
 super + q 
 	wctrl -q $(pfw)

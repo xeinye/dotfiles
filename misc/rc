@@ -1,6 +1,7 @@
 export PS1="\w \$ "
 set -o emacs
-alias v="vim"
+stty dsusp undef
+alias vim="vise"
+alias vis="vise"
 alias ls="ls -F"
 alias poweroff="doas shutdown -p now" 
-export MANPAGER="vim +MANPAGER --not-a-term"
