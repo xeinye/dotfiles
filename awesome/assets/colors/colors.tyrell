@@ -1,0 +1,34 @@
+!* Cores geradas pelo pywal – tema oliva/creme militar
+*background: #11110a
+*foreground: #ffffff
+*cursorColor: #ffffff
+*color0:  #11110a
+*color1:  #8f7650
+*color2:  #7f8064
+*color3:  #80806f
+*color4:  #86815e
+*color5:  #9eb292
+*color6:  #b1b7a3
+*color7:  #ffffff
+*color8:  #6a673d
+*color9:  #967b55
+*color10: #848569
+*color11: #858574
+*color12: #928d66
+*color13: #c5deb6
+*color14: #dde4cb
+*color15: #ffffff
+
+! Extras clássicos do pywal
+*colorBD: #ffffff          ! bold
+*colorIT: #ffffff          ! italic
+*colorUL: #86815e           ! underline
+
+! Seleção
+*.selectionBackground: #6a673d
+*.selectionForeground: #ffffff
+
+! URxvt (caso tu use
+URxvt*cursorColor:        #ffffff
+URxvt*background:         #11110a
+URxvt*foreground:         #ffffff

@@ -45,27 +45,29 @@ set undoreload=1000
 set undolevels=1000
 set undodir=~/.vim/undo/ 
 set backupdir=~/.vim/backup
+set number 
 
 " Visual
 set fillchars+=eob:\ 
 colorscheme cosmic_latte
+autocmd ColorScheme * hi Normal guibg=NONE ctermbg=NONE | hi NonText guibg=NONE | hi EndOfBuffer guibg=NONE
 set bg=dark
 let g:is_posix  = 1
 hi EndOfBuffer guibg=bg
 " Replicate :file as statusline
-""set laststatus=2
-"set statusline=
-"set statusline+=\"
-"set statusline+=%f
-"set statusline+=\"
-"set statusline+=\ 
-"set statusline+=%L
-"set statusline+=\ 
-"set statusline+=lines
-"set statusline+=\ 
-"set statusline+=\--
-"set statusline+=%p%%
-"set statusline+=\--
+set laststatus=2
+set statusline=
+set statusline+=\"
+set statusline+=%f
+set statusline+=\"
+set statusline+=\ 
+set statusline+=%L
+set statusline+=\ 
+set statusline+=lines
+set statusline+=\ 
+set statusline+=\--
+set statusline+=%p%%
+set statusline+=\--
 
 " Netrw
 let g:netrw_banner = 0  

@@ -1,0 +1,34 @@
+!* Cores geradas pelo pywal – tema quente/vermelho escuro
+*background: #080101
+*foreground: #ffd4d0
+*cursorColor: #ffd4d0
+*color0:  #080101
+*color1:  #524343
+*color2:  #704643
+*color3:  #6f4a5c
+*color4:  #856465
+*color5:  #887673
+*color6:  #9e7c78
+*color7:  #ffd4d0
+*color8:  #370a0b
+*color9:  #675454
+*color10: #8c5854
+*color11: #8b5d72
+*color12: #906d6f
+*color13: #a28d89
+*color14: #c59b96
+*color15: #ffffff
+
+! Extras que o pywal costuma jogar
+*colorBD: #ffd4d0          ! bold
+*colorIT: #ffd4d0          ! italic
+*colorUL: #856465          ! underline
+
+! Seleção
+*.selectionBackground: #370a0b
+*.selectionForeground: #ffffff
+
+! URxvt específico (se tu usar)
+URxvt*cursorColor:        #ffd4d0
+URxvt*background:         #080101
+URxvt*foreground:         #ffd4d0
