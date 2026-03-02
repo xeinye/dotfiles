@@ -1,0 +1,5 @@
+export PS1="\w \$ "
+set -o emacs
+alias ls="ls -Fa"
+stty dsusp undef
+alias poweroff="doas shutdown -p now"
