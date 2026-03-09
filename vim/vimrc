@@ -22,6 +22,7 @@ set viminfofile=NONE
 set ruler
 set tabstop=4 
 set shiftwidth=4 
+set number
 set expandtab noai
 set nocompatible 
 set noshowmode 
@@ -48,7 +49,7 @@ set backupdir=~/.vim/backup
 
 " Visual
 set fillchars+=eob:\ 
-colorscheme cosmic_latte
+colorscheme pnevma
 set bg=dark
 let g:is_posix  = 1
 hi EndOfBuffer guibg=bg

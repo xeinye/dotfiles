@@ -5,5 +5,5 @@ export LANG=en_US.UTF-8
 export MOZ_ACCELERATED=1
 export MOZ_WEBRENDER=1
 export HISTSIZE=10000
-export ENV=$HOME/rules/rc
-export HISTFILE=$HOME/rules/history
+export ENV=$HOME/git/rules/rc
+export HISTFILE=$HOME/git/rules/history
