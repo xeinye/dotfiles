@@ -11,7 +11,6 @@ input {
         // accel-speed 0.2
          accel-profile "flat"
     }
-
 }
 output "DP-2" {
     mode "2560x1440@200.002"
@@ -33,11 +32,10 @@ layout {
     default-column-width { proportion 0.5; }
 
     focus-ring {
-
         off
-        width 4
-        active-color "#7fc8ff"
-        inactive-color "#505050"
+        //width 4
+        //active-color "#ffffff"
+        //inactive-color "#ffffff"
         // You can also color the gradient relative to the entire view
         // of the workspace, rather than relative to just the window itself.
         // To do that, set relative-to="workspace-view".
@@ -45,27 +43,23 @@ layout {
     }
 
     // You can also add a border. It's similar to the focus ring, but always visible.
-    border {
-        width 0
-        inactive-color "#00000000"
-        active-color "#505050"
-        urgent-color "#9b0000"
-        // For example, this is a pastel rainbow gradient via in="oklch longer hue".
-        // active-gradient from="#e5989b" to="#ffb4a2" angle=45 relative-to="workspace-view" in="oklch longer hue"
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+
+border {
+        on
+        width 3
+        // Inter
+        active-color "#d78787"
+        inactive-color "d0d0d0"
     }
 
     shadow {
-        // on
-        // draw-behind-window true
-        softness 30
-        // Spread expands the shadow.
-        spread 5
-        // Offset moves the shadow relative to the window.
-        offset x=0 y=5
-        color "#0007"
+        on
+        softness 0
+        spread 8  // 
+        offset x=0 y=0
+       // Outer 
+        color "#1c1c1c" 
     }
-
     // Struts shrink the area occupied by windows, similarly to layer-shell panels.
     // You can think of them as a kind of outer gaps. They are set in logical pixels.
     // Left and right struts will cause the next window to the side to always be visible.
@@ -75,8 +69,9 @@ layout {
     }
 }
 
-// This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
+hotkey-overlay {
+     skip-at-startup
+}
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
 // The path is formatted with strftime(3) to give you the screenshot date and time.
@@ -94,22 +89,21 @@ animations {
 window-rule {
     open-floating true
     default-column-width {}
-    geometry-corner-radius 27
     clip-to-geometry true
 }
 
 window-rule {
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id=r#"firefox "# title="^Picture-in-Picture "
     geometry-corner-radius 0
     border {
         off
-    } 
+    }
     open-floating true
 }
 
 binds {
     // Most actions that you can bind here can also be invoked programmatically with
-    // `niri msg action do-something`.
+    // niri msg action do-something.
     Mod+Return { spawn "foot"; }
     Mod+D { spawn "wmenu-run"; }
     Super+Alt+L { spawn "swaylock"; }
