@@ -1584,7 +1584,7 @@ CONFIG_PREVENT_FIRMWARE_BUILD=y
 CONFIG_FW_LOADER=y
 CONFIG_FW_LOADER_PAGED_BUF=y
 CONFIG_FW_LOADER_SYSFS=y
-CONFIG_EXTRA_FIRMWARE="amdgpu/navy_flounder_ce.bin amdgpu/navy_flounder_dmcub.bin amdgpu/navy_flounder_me.bin amdgpu/navy_flounder_mec.bin amdgpu/navy_flounder_mec2.bin amdgpu/navy_flounder_pfp.bin amdgpu/navy_flounder_rlc.bin amdgpu/navy_flounder_sdma.bin amdgpu/navy_flounder_smc.bin amdgpu/navy_flounder_sos.bin amdgpu/navy_flounder_ta.bin amdgpu/navy_flounder_vcn.bin intel/ibt-1040-0041.ddc intel/ibt-1040-0041.sfi"
+CONFIG_EXTRA_FIRMWARE="amdgpu/navy_flounder_ce.bin amdgpu/navy_flounder_dmcub.bin amdgpu/navy_flounder_me.bin amdgpu/navy_flounder_mec.bin amdgpu/navy_flounder_mec2.bin amdgpu/navy_flounder_pfp.bin amdgpu/navy_flounder_rlc.bin amdgpu/navy_flounder_sdma.bin amdgpu/navy_flounder_smc.bin amdgpu/navy_flounder_sos.bin amdgpu/navy_flounder_ta.bin amdgpu/navy_flounder_vcn.bin"
 CONFIG_EXTRA_FIRMWARE_DIR="/usr/lib/firmware"
 CONFIG_FW_LOADER_USER_HELPER=y
 # CONFIG_FW_LOADER_USER_HELPER_FALLBACK is not set

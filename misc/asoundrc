@@ -1,0 +1,19 @@
+pcm.dmixer {
+    type dmix
+    ipc_key 1024
+    slave {
+        pcm "hw:PRO,0"
+        rate 48000
+        channels 2
+    }
+}
+
+pcm.!default {
+    type plug
+    slave.pcm "dmixer"
+}
+
+ctl.!default {
+    type hw
+    card PRO
+}
