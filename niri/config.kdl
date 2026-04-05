@@ -150,7 +150,7 @@ binds {
     // Most actions that you can bind here can also be invoked programmatically with
     // niri msg action do-something.
     Mod+Return { spawn "foot"; }
-    Mod+D { spawn "wmenu-run"; }
+    Mod+D { spawn "firefox"; }
     Super+Alt+L { spawn "swaylock"; }
 
     // "-l 1.0" limits the volume to 100%.
