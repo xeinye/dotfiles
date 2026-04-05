@@ -114,6 +114,7 @@ layout {
     }
 }
 spawn-sh-at-startup "swaybg -m fill -i ~/git/wall/beach.jpg"
+spawn-sh-at-startup "noti"
 hotkey-overlay {
      skip-at-startup
 }
@@ -140,6 +141,16 @@ window-rule {
 window-rule {
     match app-id=r#"firefox "# title="^Picture-in-Picture "
     geometry-corner-radius 0
+    border {
+        off
+    }
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"foot"# title="noti"
+    geometry-corner-radius 10
+    default-floating-position x=2104 y=39
     border {
         off
     }
