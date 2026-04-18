@@ -11,6 +11,7 @@ Plug 'LunarWatcher/auto-pairs'
 Plug 'mzlogin/vim-markdown-toc'
 Plug '~/git/pnevma.vim'
 Plug 'nightsense/cosmic_latte'
+Plug 'cormacrelf/vim-colors-github'
 call plug#end()
 
 "  Settings
@@ -49,29 +50,30 @@ set backupdir=~/.config/vim/backup
 
 " Visual
 set fillchars+=eob:\ 
-colorscheme pnevma
-set bg=dark
+colorscheme github
 let g:is_posix  = 1
 hi EndOfBuffer guibg=bg
 " Replicate :file as statusline
-""set laststatus=2
-"set statusline=
-"set statusline+=\"
-"set statusline+=%f
-"set statusline+=\"
-"set statusline+=\ 
-"set statusline+=%L
-"set statusline+=\ 
-"set statusline+=lines
-"set statusline+=\ 
-"set statusline+=\--
-"set statusline+=%p%%
-"set statusline+=\--
+
+
+set laststatus=2
+hi StatusLineFile guibg=#3b4252 guifg=#eceff4
+hi StatusLineInfo guibg=#5e81ac guifg=#eceff4
+hi StatusLineFill guibg=NONE guifg=NONE
+
+" Statusline
+set statusline=
+set statusline+=%#StatusLineFile#
+set statusline+=\ %f\           
+set statusline+=%#StatusLineFill#
+set statusline+=%=  
+set statusline+=\ %p%%\          
+set statusline+=%#StatusLineInfo#
+set statusline+=\ %{&filetype}\  
 
 " Netrw
 let g:netrw_banner = 0  
 
-" Enable normal colors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
@@ -82,13 +84,6 @@ let &t_EI = "\<Esc>[2 q"
 
 " Save
 cmap w!! w !doas tee % >/dev/null
-
-" Yank to xclip
-function Xclip() range
-  call system('xclip -selection c,p', @r)
-  echo line("'>") - line("'<") + 1 "lines yanked to clipboard"
-endfunction
-vnoremap <C-y> "ry:call Xclip()  <cr>"
 
 " ALE
 set omnifunc=ale#completion#OmniFunc

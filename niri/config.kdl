@@ -113,8 +113,7 @@ layout {
     struts {
     }
 }
-spawn-sh-at-startup "swaybg -m fill -i ~/git/wall/beach.jpg"
-spawn-sh-at-startup "noti"
+spawn-sh-at-startup "swaybg -c 8a9f57 -m solid_color"
 hotkey-overlay {
      skip-at-startup
 }
