@@ -12,7 +12,7 @@ input {
          accel-profile "flat"
     }
 }
-output "DP-2" {
+output "DP-3" {
     mode "2560x1440@200.002"
     scale 1
     transform "normal"
@@ -113,7 +113,8 @@ layout {
     struts {
     }
 }
-spawn-sh-at-startup "swaybg -c 8a9f57 -m solid_color"
+spawn-sh-at-startup "swaybg -i ~/git/wall/wall.jpg -m fill"
+spawn-sh-at-startup "wlclock"
 hotkey-overlay {
      skip-at-startup
 }
@@ -134,6 +135,7 @@ animations {
 window-rule {
     open-floating true
     default-column-width {}
+//    geometry-corner-radius 17
     clip-to-geometry true
 }
 

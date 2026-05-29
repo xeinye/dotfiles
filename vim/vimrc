@@ -12,6 +12,7 @@ Plug 'mzlogin/vim-markdown-toc'
 Plug '~/git/pnevma.vim'
 Plug 'nightsense/cosmic_latte'
 Plug 'cormacrelf/vim-colors-github'
+Plug 'joshdick/onedark.vim'
 call plug#end()
 
 "  Settings
@@ -50,7 +51,7 @@ set backupdir=~/.config/vim/backup
 
 " Visual
 set fillchars+=eob:\ 
-colorscheme github
+colorscheme onedark
 let g:is_posix  = 1
 hi EndOfBuffer guibg=bg
 " Replicate :file as statusline
